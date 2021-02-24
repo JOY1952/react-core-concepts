@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: royalblue;
+    font-family: 'Poppins', sans-serif;
+
+}
+section{
+    background-color: white;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+}
+.section-title{
+    color:blue;
+}
+
+main{
+    width: 900px;
+    min-width: 90%;
+    margin: 0 auto;
+}
+.top-leders, .blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 20px;
+}
+.corces img{
+    height: 150px;
+    width: 200px;
+}
+.top-leders, .corces{
+    grid-template-columns: repeat(3, 1fr);
+}
+.blogs{
+    grid-template-columns: repeat(2, 1fr);
+}
+.thumbnil img{
+    width: 200px;
+    margin-right: 20px;
+}
+.leders, .blog, .corces{
+    display: flex;
+    align-items: center;
+    place-items: center;
+}
+.leders img{
+    height: 50px;
+    margin-right: 20px;
+}
+.fild{
+    color: goldenrod;
+    font-size: 0.8em;
+}
+.unfild{
+    color: lightgray;
+    font-size: 0.8em;
+}
+.corce-info{
+    display: flex;
+}
+@media (max-width: 992px){
+    .top-leders, .corces{
+        grid-template-columns: repeat(2, 1fr)
+  }
+  .blogs, .corces{
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+  @media (max-width: 668px){
+    .top-leders{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        display: block;
+    }
+  }
